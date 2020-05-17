@@ -1,5 +1,8 @@
+from perudo.dice import Dice
+
+
 def main():
-    pass
+    print(Dice().value)
 
 
 if __name__ == "__main__":
