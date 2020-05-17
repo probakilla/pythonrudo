@@ -12,8 +12,8 @@ class DiceTestCase(unittest.TestCase):
         self.dice = Dice()
 
     def test_initialize(self):
-        self.assertEqual(self.dice.value, 0)
+        self.assertIn(self.dice.value, DICE_VALUES)
 
     def test_roll(self):
         self.dice.roll()
-        self.assertIn(self.dice, DICE_VALUES)
+        self.assertIn(self.dice.value, DICE_VALUES)
